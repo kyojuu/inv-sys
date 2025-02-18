@@ -1,0 +1,14 @@
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\bin\Debug\net9.0\inv.exe
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\bin\Debug\net9.0\inv.deps.json
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\bin\Debug\net9.0\inv.runtimeconfig.json
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\bin\Debug\net9.0\inv.dll
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\bin\Debug\net9.0\inv.pdb
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.AssemblyInfoInputs.cache
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.AssemblyInfo.cs
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.csproj.CoreCompileInputs.cache
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.dll
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\refint\inv.dll
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.pdb
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.genruntimeconfig.cache
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\ref\inv.dll

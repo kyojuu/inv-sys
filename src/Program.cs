@@ -30,11 +30,18 @@ while (running)
             prodManager.RemoveProduct(id);
             break;
         case 3:
-            prodManager.Print("Enter product id to be updated: ");
-            id = uint.Parse(Console.ReadLine()!);
-            prodManager.Print("Enter new quantity: ");
-            var newQuantity = uint.Parse(Console.ReadLine()!);
-            prodManager.UpdateProduct(id, newQuantity);
+            try
+            {
+                prodManager.Print("Enter product id to be updated: ");
+                id = uint.Parse(Console.ReadLine()!);
+                prodManager.Print("Enter new quantity: ");
+                var newQuantity = uint.Parse(Console.ReadLine()!);
+                prodManager.UpdateProduct(id, newQuantity);
+            }
+            catch (OverflowException)
+            {
+                prodManager.Print("Id or quantity shoud be positive integer.");
+            }
             break;
         case 4:
             prodManager.ListProduct();

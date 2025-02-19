@@ -14,40 +14,45 @@ public sealed class InventoryManager : IInventoryManager
     // here I use a mockup like dependency injection for table products
     // then implement a repository pattern to decouple data processing
     private List<Product> _products = new List<Product>();
-    private uint _id = 1;
+    private uint _id;
 
     public void AddProduct(Product product)
     {
         // here id automatically increment to a positive integer
         // then create a new instance of product to be added on the list
-        _id = product.ProductId++;
-        Print("Product Name: ");
-        var productName = Console.ReadLine()!;
-        Print("Quantity: ");
-        var quantity = uint.Parse(Console.ReadLine()!);
-        Print("Price: ");
-        var price = decimal.Parse(Console.ReadLine()!);
-        
-        // if the price is not negative or less than zero proceed, otherwise not 
-        if (price > 0)
+        try
         {
-            product = new Product()
+            _id = product.ProductId++;
+            Print("Product Name: ");
+            var productName = Console.ReadLine()!;
+            Print("Quantity: ");
+            var quantity = uint.Parse(Console.ReadLine()!);
+            Print("Price: ");
+            var price = decimal.Parse(Console.ReadLine()!);
+            if (price > 0)
             {
-                ProductId = _id,
-                Name = productName,
-                QuantityInStock = quantity,
-                Price = price,
-            };
-            _products.Add(product);
-            Print("Added product.");
+                product = new Product()
+                {
+                    ProductId = _id,
+                    Name = productName,
+                    QuantityInStock = quantity,
+                    Price = price,
+                };
+                _products.Add(product);
+                Print("Added product.");
+            }
+            else
+            {
+                Print("Price should be positive integer.");
+            }
         }
-        else
+        catch (OverflowException)
         {
-            Print("Product should be positive integer.");
+            Print("Quantity should be positive integer.");
         }
     }
 
-    // here I use lambda method to find the id then remove its all of properties content
+    // here I use lambda method to find the id then remove all of its properties content
     public void RemoveProduct(uint productId)
     {
         _products.RemoveAll(x => x.ProductId.Equals(productId));
@@ -55,13 +60,12 @@ public sealed class InventoryManager : IInventoryManager
     }
 
     // same with RemoveProduct to find id 
-    // then once find a newly inputed quantity will be assign
+    // then once found, a newly inputed quantity will be assign
     public void UpdateProduct(uint productId, uint newQuantity)
     {
         var product = _products.Find(x => x.ProductId.Equals(productId));
         product!.QuantityInStock = newQuantity;
-        Print("Updated product.");
-        
+        Print("Updated product.");   
     }
 
     // here to query all of the contents of products list

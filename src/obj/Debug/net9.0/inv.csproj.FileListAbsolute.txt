@@ -12,3 +12,4 @@ C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\refint\inv
 C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.pdb
 C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.genruntimeconfig.cache
 C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\ref\inv.dll
+C:\Users\Josh Harnet Ravago\Dev\Projects\inv-sys\src\obj\Debug\net9.0\inv.sourcelink.json
